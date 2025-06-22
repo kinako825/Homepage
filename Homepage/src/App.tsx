@@ -1,25 +1,18 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout/Layout';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
 
 const App = () => {
     return (
         <BrowserRouter>
-            <div className="main">
-                <Header />
-                <div className="right-content">
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/about" element={<About />} />
-                        <Route path="/contact" element={<Contact />} />
-                    </Routes>
-                </div>
-                <Footer />
-            </div>
+            <Routes>
+                <Route path="/" element={<Layout><Home /></Layout>} />
+                <Route path="/about" element={<Layout><About /></Layout>} />
+                <Route path="/contact" element={<Layout><Contact /></Layout>} />
+            </Routes>
         </BrowserRouter>
     );
 };

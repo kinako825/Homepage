@@ -1,0 +1,23 @@
+.profileContent {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contentLeft {
+    flex-shrink: 0;
+    /* 画像の縮みを防ぐ */
+    width: 30%;
+}
+
+.profileimage {
+    width: 100%;
+    /* contentLeftに合わせて拡大 */
+    height: auto;
+    border-radius: 100px;
+}
+
+.profileText {
+    flex: 1;
+    padding-left: 50px;
+}

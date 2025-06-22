@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.contentWrapper {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.mainContent {
+    flex: 1;
+    padding: 90px 90px;
+    overflow-y: auto;
+}
+
+.footer {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
